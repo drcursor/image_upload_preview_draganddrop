@@ -1,5 +1,5 @@
 # image_upload_preview_draganddrop
-Example of an HTML Image element with preview that accepts drag and drop
+Example of an HTML Image element with preview that accepts drag and drop and AJAX changes.
 
 ## Objective
 I spent several hours googling around and trying different solutions from stackoverflow until I was able to figure out a very hacked way to get what I wanted working:
@@ -12,7 +12,8 @@ I spent several hours googling around and trying different solutions from stacko
 - And I wanted to do this without having to add 999 external JS files (ended up adding JQuery out of lazyness to write some of the JS...)
 
 ## Hack
-### Why is this a hack? ###
+Why is this a hack?
+
 - Becase the drag and drop is actualy using a text input element to pass on the file on the POST data (at first I thought it wouldn't work because of the character limits of the HTML text element..but it actually worked on all major browsers).
 - Because it was extracted from a larger project and as such might have weird idiosyncrasies.
 
